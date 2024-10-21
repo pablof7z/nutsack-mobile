@@ -64,7 +64,7 @@ function RootLayoutNav() {
     return (
         <ThemeProvider value={colorScheme === "dark" ? DarkTheme : DefaultTheme}>
             <NDKProvider
-                explicitRelayUrls={['ws://localhost:2929', 'wss://relay.primal.net', 'wss:/purplepag.es']}
+                explicitRelayUrls={['ws://localhost:2929', 'wss://relay.primal.net', 'wss:/purplepag.es', 'wss://f7z.io', 'wss://relay.damus.io']}
                 cacheAdapter={new NDKCacheAdapterSqlite('nutsack')}
             >
                 <NDKSessionProvider
